@@ -1,4 +1,6 @@
+const express = require("express");
 const helmet = require("helmet");
+const app = express();
 const PORT = process.env.PORT || 3030;
 
 app.listen(PORT, () => {
@@ -23,6 +25,7 @@ module.exports = app;
  * the verification process may break
  *******************************************/
 
+var express = require("express");
 app.disable("x-powered-by");
 var fs = require("fs");
 var path = require("path");
