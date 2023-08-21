@@ -1,6 +1,11 @@
 const express = require("express");
 const helmet = require("helmet");
 const app = express();
+const PORT = process.env.PORT || 3030;
+
+app.listen(PORT, () => {
+  console.log(`🦚 Blueavian9 Info Security App Started on Port ${PORT}`);
+});
 
 module.exports = app;
 const api = require("./server.js");
@@ -17,7 +22,7 @@ app.listen(port, () => {
 
 /*
 install and Require Helmet - Information Security with HelmetJS - Freecodecamp.org
-left off: 04:21 /24:36
+left off: 06:20 /24:36
 IMPORTANT TIP:
 how to deploy a node.js app for free
 
