@@ -1,4 +1,3 @@
-const express = require("express");
 const helmet = require("helmet");
 const PORT = process.env.PORT || 3030;
 
@@ -24,8 +23,6 @@ module.exports = app;
  * the verification process may break
  *******************************************/
 
-var express = require("express");
-var app = express();
 app.disable("x-powered-by");
 var fs = require("fs");
 var path = require("path");

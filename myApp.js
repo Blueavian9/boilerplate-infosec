@@ -25,7 +25,6 @@ module.exports = app;
  * the verification process may break
  *******************************************/
 
-var express = require("express");
 app.disable("x-powered-by");
 var fs = require("fs");
 var path = require("path");
