@@ -1,12 +1,3 @@
-const express = require("express");
-const helmet = require("helmet");
-const app = express();
-const PORT = process.env.PORT || 3030;
-
-app.listen(PORT, () => {
-  console.log(`🦚 Blueavian9 Info Security App Started on Port ${PORT}`);
-});
-
 module.exports = app;
 const api = require("./server.js");
 app.use(express.static("public"));
